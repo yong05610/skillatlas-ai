@@ -7,7 +7,7 @@ import urllib.error
 
 def call_gemini(prompt):
     api_key = os.getenv("GEMINI_API_KEY")
-    model = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+    model = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
 
     if not api_key:
         return None, "GEMINI_API_KEY 환경변수가 설정되지 않았습니다."
