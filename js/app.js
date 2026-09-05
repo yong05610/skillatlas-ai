@@ -1,4 +1,3 @@
-@'
 document.getElementById("testBtn").addEventListener("click", async () => {
   const result = document.getElementById("result");
 
@@ -11,4 +10,3 @@ document.getElementById("testBtn").addEventListener("click", async () => {
     console.error(error);
   }
 });
-'@ | Set-Content js\app.js

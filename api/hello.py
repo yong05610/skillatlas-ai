@@ -1,4 +1,3 @@
-@'
 from http.server import BaseHTTPRequestHandler
 
 class handler(BaseHTTPRequestHandler):
@@ -7,4 +6,3 @@ class handler(BaseHTTPRequestHandler):
         self.send_header("Content-type", "text/plain; charset=utf-8")
         self.end_headers()
         self.wfile.write("Hello from SkillAtlas AI!".encode("utf-8"))
-'@ | Set-Content api\hello.py
