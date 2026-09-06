@@ -175,32 +175,34 @@
 
 ### Python 직접 실행 상태 (해결 완료)
 
-- [x] `python --version` 정상 실행 (Python 3.14.7 확인)
+- [x] `python --version` 정상 실행 (Python 3.12.10 확인)
 - [x] `python -m py_compile api/generate-roadmap.py` 구문 검사 성공 (정상 통과)
 
-### PowerShell npm 실행 정책 문제
+### PowerShell npm 실행 정책 (해결 완료)
 
-- [x] `npm.cmd --version` 정상 동작 (11.17.0)
-- [x] `npx.cmd` 정상 동작
-- [ ] PowerShell Execution Policy 설정 (`Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned` 권장)
+- [x] `npm --version` 정상 동작 (11.17.0)
+- [x] `npx --version` 정상 동작 (11.17.0)
+- [x] PowerShell Execution Policy `CurrentUser` 범위 `RemoteSigned` 적용 완료
 
-### Vercel CLI 전역 명령
+### Vercel CLI 전역 명령 (해결 완료)
 
-- [ ] `vercel` 전역 명령 미설치 상태
-- [x] 대안인 `npx.cmd vercel`을 통해 빌드/배포 정상 동작 확인 완료
-- [ ] 필요시 `npm.cmd install -g vercel` 설치 권장
+- [x] `vercel --version` 정상 동작 (59.11.7)
+- [x] `npm install -g vercel` 전역 설치 완료
 
-### 이미지 및 UI 에셋 개선 사항
+### 터미널 한글 인코딩 (해결 완료)
 
-- [ ] `images/` 폴더 내 서비스 스크린샷 또는 대표 썸네일/파비콘 에셋 추가
-- [ ] Open Graph 메타 태그(`og:image`) 및 파비콘(`favicon.ico`) 적용 검토
+- [x] UTF-8 인코딩 설정 및 `Get-Content -Encoding utf8`을 통한 한국어 정상 출력 확인 완료
+
+### 이미지 및 UI 에셋 개선 사항 (해결 완료)
+
+- [x] `images/logo-icon.jpg` 헤더 브랜드 로고 에셋 추가 및 적용
+- [x] `images/og-thumbnail.jpg` 16:9 SNS 공유 썸네일 에셋 추가 및 적용
+- [x] Open Graph 메타 태그 및 `🧭` 파비콘 적용 완료
 
 ## 4. 현재 남은 작업
 
-- [ ] 사용자가 실제 브라우저에서 `https://skillatlas-ai-sigma.vercel.app` 접속 확인
-- [ ] 실제 브라우저 개발자 도구에서 375px/390px 모바일 화면 최종 육안 확인
-- [ ] 환경 설정 (PowerShell 실행 정책 / 전역 Vercel CLI 설치)
-- [ ] 대표 이미지/파비콘 에셋 제작 및 적용
+- [x] 모든 환경 점검 및 도구(Python, npm, npx, vercel, UTF-8) 정상화 완료
+- [ ] 사용자가 실제 브라우저에서 `https://skillatlas-ai-sigma.vercel.app` 최종 접속 확인
 
 ## 5. 참고 메모
 
