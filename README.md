@@ -35,7 +35,8 @@ skillatlas-ai/
 ├── api/
 │   └── generate-roadmap.py
 └── images/
-    └── .gitkeep
+    ├── .gitkeep
+    └── og-thumbnail.jpg
 ```
 
 ## 실행 방법
