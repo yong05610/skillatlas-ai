@@ -85,16 +85,22 @@ a {
 }
 
 .section {
-  padding: 56px 0;
-  scroll-margin-top: calc(var(--header-height) + 12px);
+  padding: 48px 0;
+  scroll-margin-top: var(--header-height);
 }
 
 .hero {
-  padding-top: 52px;
-  padding-bottom: 56px;
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
   background:
     linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(124, 58, 237, 0.08)),
     var(--bg);
+}
+
+.hero-grid {
+  width: 100%;
 }
 
 .hero-grid,
@@ -114,7 +120,7 @@ a {
 
 .hero h1 {
   max-width: 760px;
-  font-size: clamp(2rem, 4.2vw, 3.8rem);
+  font-size: clamp(2rem, 3.8vw, 3.4rem);
 }
 
 .hero-text,
@@ -267,6 +273,8 @@ a {
 }
 
 .roadmap-section {
+  padding-top: 24px;
+  padding-bottom: 36px;
   background: #eef4ff;
 }
 
@@ -344,11 +352,11 @@ textarea:focus {
 }
 
 .roadmap-result {
-  min-height: 360px;
-  max-height: 540px;
+  min-height: 440px;
+  max-height: calc(100vh - var(--header-height) - 160px);
   overflow: auto;
   margin: 0;
-  padding: 18px;
+  padding: 20px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #0f172a;
