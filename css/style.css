@@ -55,9 +55,20 @@ a {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-size: 1.15rem;
   font-weight: 800;
   color: var(--blue);
+}
+
+.brand-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
 }
 
 .nav-links {

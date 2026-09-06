@@ -36,6 +36,7 @@ skillatlas-ai/
 │   └── generate-roadmap.py
 └── images/
     ├── .gitkeep
+    ├── logo-icon.jpg
     └── og-thumbnail.jpg
 ```
 
